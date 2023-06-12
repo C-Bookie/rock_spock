@@ -1,8 +1,9 @@
-# 'Ello Lewis and future Latifah :)
-# Just to warn you, I may state the obvious a lot in this,
-# or I won't be obvious enough. One of those. I hope it's
-# actually understandable/helpful either way.
-
+"""
+'Ello Lewis and future Latifah :)
+Just to warn you, I may state the obvious a lot in this,
+or I won't be obvious enough. One of those. I hope it's
+actually understandable/helpful either way.
+"""
 
 # This is the Rock-paper-scissors-lizard-Spock template
 
@@ -88,6 +89,7 @@ import random
 
 
 def name_to_number(name):
+    """todo add doc-string"""
     if name == "rock":  # <---DON'T FORGET THE COLONS. You know how
         # many times I forgot them? Many frustrating times.
 
@@ -114,6 +116,7 @@ def name_to_number(name):
 
 
 def number_to_name(number):
+    """todo add doc-string"""
     if number == 0:
         return "rock"
     elif number == 1:
@@ -160,28 +163,22 @@ def number_to_name(number):
 
 
 def rpsls(player_choice):
-    print
-    ""
-    print
-    "Player chooses " + player_choice
+    """todo add doc-string"""
+    print("")
+    print("Player chooses " + player_choice)
     player_number = name_to_number(player_choice)
     comp_number = random.randrange(0, 4)
     comp_choice = number_to_name(comp_number)
-    print
-    "Computer chooses " + comp_choice
+    print("Computer chooses " + comp_choice)
     winner = (player_number - comp_number) % 5
     if winner == 0:
-        print
-        "Player and computer tie!"
+        print("Player and computer tie!")
     elif (winner == 1) or (winner == 2):
-        print
-        "Player wins!"
+        print("Player wins!")
     elif (winner == 3) or (winner == 4):
-        print
-        "Computer wins!"
+        print("Computer wins!")
     else:
-        print
-        "Invalid modulo calculation."
+        print("Invalid modulo calculation.")
 
     #
 
@@ -194,10 +191,16 @@ def rpsls(player_choice):
 
 
 # test your code - LEAVE THESE CALLS IN YOUR SUBMITTED CODE
-rpsls("rock")
-rpsls("Spock")
-rpsls("paper")
-rpsls("lizard")
-rpsls("scissors")
+def main():
+    rpsls("rock")
+    rpsls("Spock")
+    rpsls("paper")
+    rpsls("lizard")
+    rpsls("scissors")
+
 
 # always remember to check your completed program against the grading rubric
+
+
+if __name__ == "__main__":
+    main()
