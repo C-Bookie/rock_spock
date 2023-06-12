@@ -1,0 +1,7 @@
+[project]
+name = "rock_spock"
+authors = [
+    {name = "C-Bookie", email = "duck-vader@hotmail.co.uk"},
+    {name = "Latifah-Parara", email = "tifa-p@live.co.uk"}
+]
+#readme = "README.md"
