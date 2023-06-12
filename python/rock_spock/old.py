@@ -53,26 +53,26 @@ import random
 # writing at least 5 if/elif/else words to get a better idea of the
 # function's structure until we figure out how to fill it all in.
 # 		def name_to_number(name):
-#			if
-#				return
-#			elif
-#				return
-#			elif
-#				return
-#			elif
-#				return
-#			elif
-#				return
+# 			if
+# 				return
+# 			elif
+# 				return
+# 			elif
+# 				return
+# 			elif
+# 				return
+# 			elif
+# 				return
 # The base looks promising, but 'if' what, and 'return' what exactly?
 # How do we actually start turning it into numbers? This function has
 # only one parameter, which is (name), and the purpose of the function
 # is to convert a name to a number, so it's highly probable that we have
 # to write name after the if/else statements.
 # 		def name_to_number(name):
-#			if name
-#				return
-#			elif name
-#				return
+# 			if name
+# 				return
+# 			elif name
+# 				return
 # 				etc
 # We have 5 names to use here; 'rock', 'paper', 'scissors', 'lizard'
 # and 'Spock' so we need to include these names for each if/elif
@@ -85,6 +85,7 @@ import random
 # whatever reason, I'll add an 'else' statement to define what should
 # be returned.
 # The code should be looking like this now:
+
 
 def name_to_number(name):
     if name == "rock":  # <---DON'T FORGET THE COLONS. You know how
@@ -131,19 +132,19 @@ def number_to_name(number):
 # 						THIRD INSTRUCTIONS
 # 			print a blank line to separate consecutive games
 # 			print out the message for the player's choice
-#			convert the player's choice to
-#			player_number using the function name_to_number()
+# 			convert the player's choice to
+# 			player_number using the function name_to_number()
 ###################################################################
 # Now we get to the part where the function we've just created needs
 # to be implemented.
 # I'll go ahead and do those instructions in order. Ok, so, print a
 # blank line. Sure.
-#		print ""
+# 		print ""
 # Now print out the message for the player's choice.
 # There are two parts to the message for the player's choice, the
 # string "Player chooses" (that was given in the project's brief)
 # and the actual choice. The print out should look a bit like this:
-#		print "Player chooses " + player_choice
+# 		print "Player chooses " + player_choice
 # Remember to type in a space after the word 'chooses', else
 # there would be no space between "Player chooses" and player_choice.
 # Using a comma instead of a + sign would also work in this instance,
@@ -155,7 +156,8 @@ def number_to_name(number):
 # sense to start it off with 'player_number =' since it is the thing
 # that we need to figure out. 'name_to_number()' should also come
 # after it. So far we have:
-#		player_number = name_to_number()
+# 		player_number = name_to_number()
+
 
 def rpsls(player_choice):
     print
@@ -199,5 +201,3 @@ rpsls("lizard")
 rpsls("scissors")
 
 # always remember to check your completed program against the grading rubric
-
-
